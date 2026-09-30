@@ -12,6 +12,7 @@ authors:
   - family-names: Zhuzbayev
     given-names: Serik
     affiliation: "L.N. Gumilyov Eurasian National University"
+    orcid: https://orcid.org/0000-0002-0018-6816
   - family-names: Alkhanova
     given-names: Gulnur
     affiliation: "Alikhan Bokeikhan University"
@@ -31,6 +32,7 @@ authors:
   - family-names: Sarsenbay
     given-names: Magzhan
     affiliation: "L.N. Gumilyov Eurasian National University"
+    orcid: https://orcid.org/0009-0003-5365-5297
 preferred-citation:
   type: article
   title: "OPAL: Joint Early Warning and Resource Recommendation with Temporal Learner-Resource Graphs for a Unified Open-University Portal"
@@ -42,6 +44,7 @@ preferred-citation:
     - family-names: Zhuzbayev
       given-names: Serik
       affiliation: "L.N. Gumilyov Eurasian National University"
+      orcid: https://orcid.org/0000-0002-0018-6816
     - family-names: Alkhanova
       given-names: Gulnur
       affiliation: "Alikhan Bokeikhan University"
@@ -61,6 +64,7 @@ preferred-citation:
     - family-names: Sarsenbay
       given-names: Magzhan
       affiliation: "L.N. Gumilyov Eurasian National University"
+      orcid: https://orcid.org/0009-0003-5365-5297
   journal: "Computers, Materials & Continua"
   year: 2026
   notes: "Under review."

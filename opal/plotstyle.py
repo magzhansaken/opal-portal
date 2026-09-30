@@ -37,6 +37,12 @@ def panel_label(ax, s):
 
 
 def save(fig, path):
+    """PDF for LaTeX, 900-dpi RGB TIFF (LZW) for production and a PNG for the README."""
+    from PIL import Image
     fig.savefig(path + ".pdf")
     fig.savefig(path + ".tif", dpi=900, pil_kwargs={"compression": "tiff_lzw"})
+    im = Image.open(path + ".tif")
+    if im.mode != "RGB":                      # flatten the alpha channel on white: journals ask for RGB TIFF
+        bg = Image.new("RGB", im.size, "white"); bg.paste(im, mask=im.split()[-1] if "A" in im.mode else None)
+        bg.save(path + ".tif", dpi=(900, 900), compression="tiff_lzw")
     fig.savefig(path + ".png", dpi=200)
