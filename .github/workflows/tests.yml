@@ -1,0 +1,17 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (CPU)
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install torch_geometric==2.8.0.post1 scikit-learn==1.8.0 xgboost==3.2.0 lightgbm==4.7.0 pandas numpy pyarrow scipy matplotlib pytest
+      - name: Synthetic tests (no data needed)
+        run: pytest -q tests/test_synthetic.py

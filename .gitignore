@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+data/
+results/**/*.pkl
+results/**/*.pt
+results/**/*.ckpt
+results/**/*.npz
+results/**/rec/
+logs/
+*.pt
+*.ckpt
+*.ckpt.tmp
+figures/*.tif
+.pytest_cache/
+.ipynb_checkpoints/

@@ -1,0 +1,102 @@
+{
+ "oulad": {
+  "presentations": 22,
+  "modules": 7,
+  "enrollments_raw": 32593,
+  "enrollments": 29496,
+  "resources": 6364,
+  "weeks_min": 36,
+  "weeks_max": 41,
+  "edges": 5205253,
+  "clicks": 39550834.998046875,
+  "assess_rows": 173912,
+  "x_dim": 32,
+  "z_dim": 30,
+  "d_dim": 25,
+  "train": {
+   "n": 12301,
+   "pos_rate": 0.46589708153808634,
+   "presentations": [
+    "2013B",
+    "2013J"
+   ],
+   "n_cohorts": 9,
+   "eligible": [
+    12096,
+    11818,
+    11626,
+    11434,
+    11138
+   ]
+  },
+  "val": {
+   "n": 6832,
+   "pos_rate": 0.5084894613583139,
+   "presentations": [
+    "2014B"
+   ],
+   "n_cohorts": 6,
+   "eligible": [
+    6669,
+    6516,
+    6363,
+    6217,
+    6023
+   ]
+  },
+  "test": {
+   "n": 10363,
+   "pos_rate": 0.47341503425648945,
+   "presentations": [
+    "2014J"
+   ],
+   "n_cohorts": 7,
+   "eligible": [
+    9363,
+    9219,
+    9045,
+    8881,
+    8572
+   ]
+  }
+ },
+ "act-mooc": {
+  "users": 7047,
+  "items": 97,
+  "days": 30,
+  "edges": 231182,
+  "actions": 411749.0,
+  "pos_rate": 0.5769830942153931,
+  "x_dim": 10,
+  "train": {
+   "n": 4932,
+   "pos_rate": 0.558799684047699,
+   "eligible": [
+    4932,
+    4932,
+    4932,
+    4932
+   ]
+  },
+  "val": {
+   "n": 1057,
+   "pos_rate": 0.6300851702690125,
+   "eligible": [
+    1057,
+    1057,
+    1057,
+    1057
+   ]
+  },
+  "test": {
+   "n": 1058,
+   "pos_rate": 0.6086956262588501,
+   "eligible": [
+    1058,
+    962,
+    838,
+    663
+   ]
+  }
+ }
+}

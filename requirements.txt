@@ -1,0 +1,11 @@
+torch==2.8.0
+torch_geometric==2.8.0.post1
+lightgbm==4.7.0
+xgboost==3.2.0
+scikit-learn==1.8.0
+pandas
+numpy
+pyarrow
+scipy
+matplotlib
+pytest

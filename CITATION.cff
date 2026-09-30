@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "OPAL: joint early warning and resource recommendation with temporal learner-resource graphs"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/magzhansaken/opal-portal"
+authors:
+  - family-names: Baikonys
+    given-names: Anuar
+    affiliation: "Abai Kazakh National Pedagogical University"
+    orcid: https://orcid.org/0009-0002-2418-0993
+  - family-names: Zhuzbayev
+    given-names: Serik
+    affiliation: "L.N. Gumilyov Eurasian National University"
+  - family-names: Alkhanova
+    given-names: Gulnur
+    affiliation: "Alikhan Bokeikhan University"
+    orcid: https://orcid.org/0000-0002-1151-7254
+  - family-names: Adilova
+    given-names: Aknur
+    affiliation: "M.Kh. Dulaty Taraz University"
+    orcid: https://orcid.org/0000-0001-7469-1324
+  - family-names: Sabitova
+    given-names: Diana
+    affiliation: "Sh. Ualikhanov Kokshetau University"
+    orcid: https://orcid.org/0000-0003-4853-7029
+  - family-names: Juzbayeva
+    given-names: Bahit
+    affiliation: "Ekibastuz Engineering and Technical Institute named after Academician K. Satpayev"
+    orcid: https://orcid.org/0000-0001-7567-1640
+  - family-names: Sarsenbay
+    given-names: Magzhan
+    affiliation: "L.N. Gumilyov Eurasian National University"
+preferred-citation:
+  type: article
+  title: "OPAL: Joint Early Warning and Resource Recommendation with Temporal Learner-Resource Graphs for a Unified Open-University Portal"
+  authors:
+    - family-names: Baikonys
+      given-names: Anuar
+      affiliation: "Abai Kazakh National Pedagogical University"
+      orcid: https://orcid.org/0009-0002-2418-0993
+    - family-names: Zhuzbayev
+      given-names: Serik
+      affiliation: "L.N. Gumilyov Eurasian National University"
+    - family-names: Alkhanova
+      given-names: Gulnur
+      affiliation: "Alikhan Bokeikhan University"
+      orcid: https://orcid.org/0000-0002-1151-7254
+    - family-names: Adilova
+      given-names: Aknur
+      affiliation: "M.Kh. Dulaty Taraz University"
+      orcid: https://orcid.org/0000-0001-7469-1324
+    - family-names: Sabitova
+      given-names: Diana
+      affiliation: "Sh. Ualikhanov Kokshetau University"
+      orcid: https://orcid.org/0000-0003-4853-7029
+    - family-names: Juzbayeva
+      given-names: Bahit
+      affiliation: "Ekibastuz Engineering and Technical Institute named after Academician K. Satpayev"
+      orcid: https://orcid.org/0000-0001-7567-1640
+    - family-names: Sarsenbay
+      given-names: Magzhan
+      affiliation: "L.N. Gumilyov Eurasian National University"
+  journal: "Computers, Materials & Continua"
+  year: 2026
+  notes: "Under review."

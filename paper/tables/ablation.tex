@@ -1,0 +1,19 @@
+\begin{table}[H]
+\tablesize{\footnotesize}
+\caption{Ablation study of OPAL on OULAD (mean $\pm$ standard deviation over seeds 0--2; $\Delta$ is the difference to the full model on the same seeds, in points; ``Sig.'' counts the decision points at which the ensemble AUC differs from the full model, DeLong test, Holm-adjusted $p<0.05$).}
+\label{tab:ablation}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}lCCCCCC@{}}
+\toprule
+\textbf{Variant} & \textbf{Mean AUC} & $\boldsymbol{\Delta}$\textbf{AUC} & \textbf{Sig.} & \textbf{N@10} & \textbf{N@10}\textsuperscript{\textbf{new}} & $\boldsymbol{\Delta}$\textbf{N@10}\textsuperscript{\textbf{new}}\\
+\midrule
+OPAL (full) & 0.760$\pm$0.007 & -- & -- & 0.749 & 0.544 & --\\
+w/o resource$\to$learner messages & 0.759$\pm$0.005 & $-$0.1 & 4/5 & 0.749 & 0.545 & $+$0.1\\
+w/o learner$\to$resource updates & 0.759$\pm$0.003 & $-$0.1 & 4/5 & 0.740 & 0.530 & $-$1.4\\
+w/o recommendation head & 0.766$\pm$0.006 & $+$0.6 & 3/5 & -- & -- & --\\
+w/o peer normalization & 0.761$\pm$0.004 & $+$0.1 & 2/5 & 0.744 & 0.540 & $-$0.4\\
+w/o feature path of the risk head & 0.769$\pm$0.002 & $+$0.9 & 5/5 & 0.751 & 0.546 & $+$0.2\\
+w/o assessment features & 0.739$\pm$0.004 & $-$2.2 & 5/5 & 0.749 & 0.542 & $-$0.2\\
+\bottomrule
+\end{tabularx}
+\end{table}

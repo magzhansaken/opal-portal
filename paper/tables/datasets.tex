@@ -1,0 +1,19 @@
+\begin{table}[H]
+\tablesize{\footnotesize}
+\caption{Statistics of the two datasets after preprocessing; positive \% is the share of learners with $y_u=1$.}
+\label{tab:datasets}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}p{5.2cm}LL@{}}
+\toprule
+\textbf{Property} & \textbf{OULAD} & \textbf{act-mooc}\\
+\midrule
+Cohorts; time step & 22 presentations of 7 modules; week & 1 course; day\\
+Enrollments; resources & 29,496; 6,364 & 7,047; 97\\
+Clicks or actions; learner--resource edges & 39,550,835; 5,205,253 & 411,749; 231,182\\
+Features $\mathbf{x}_u^{(s)}$ / $\mathbf{z}_u$ / $\mathbf{d}_r$ & 32 / 30 / 25 & 10 / 2 / 97 (one-hot)\\
+Training / validation / test learners & 12,301 / 6,832 / 10,363 & 4,932 / 1,057 / 1,058\\
+Positive \% (training / validation / test) & 46.6 / 50.8 / 47.3 & 55.9 / 63.0 / 60.9\\
+Split & 2013B+2013J / 2014B / 2014J & 70\% / 15\% / 15\% of learners by first action\\
+\bottomrule
+\end{tabularx}
+\end{table}

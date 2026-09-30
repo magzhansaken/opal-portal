@@ -1,0 +1,92 @@
+{
+ "oulad": {
+  "opal": {
+   "train_sec": 971.5290350914001,
+   "epochs": 49,
+   "infer_sec": 6.868433475494385,
+   "n_params": 102181,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "GRU": {
+   "train_sec": 180.16491055488586,
+   "epochs": 43,
+   "infer_sec": 1.2502951622009277,
+   "n_params": 49793,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "Transformer": {
+   "train_sec": 518.2015891075134,
+   "epochs": 30,
+   "infer_sec": 3.807555675506592,
+   "n_params": 95873,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "R-GCN": {
+   "train_sec": 52.49956727027893,
+   "infer_sec": 1.0235602855682373,
+   "n_params": 111041,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "HGT": {
+   "train_sec": 270.17389464378357,
+   "infer_sec": 3.918320417404175,
+   "n_params": 99661,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "SASRec": {
+   "train_sec": 294.40453839302063,
+   "fits": 35,
+   "sec_per_fit": 8.41155823980059
+  },
+  "GRU4Rec": {
+   "train_sec": 90.3818666934967,
+   "fits": 35,
+   "sec_per_fit": 2.58233904838562
+  }
+ },
+ "act-mooc": {
+  "opal": {
+   "train_sec": 1013.354786157608,
+   "epochs": 35,
+   "infer_sec": 0.818678617477417,
+   "n_params": 91825,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "GRU": {
+   "train_sec": 186.41711401939392,
+   "epochs": 18,
+   "infer_sec": 0.3681640625,
+   "n_params": 40577,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "Transformer": {
+   "train_sec": 1409.1687190532684,
+   "epochs": 16,
+   "infer_sec": 1.114405870437622,
+   "n_params": 86657,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "R-GCN": {
+   "train_sec": 8.448776006698608,
+   "infer_sec": 0.14268016815185547,
+   "n_params": 33153,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "HGT": {
+   "train_sec": 46.59054207801819,
+   "infer_sec": 0.6808712482452393,
+   "n_params": 99597,
+   "max_abs_logit_diff_vs_main_run": 0.0
+  },
+  "SASRec": {
+   "train_sec": 571.9183995723724,
+   "fits": 4,
+   "sec_per_fit": 142.9795998930931
+  },
+  "GRU4Rec": {
+   "train_sec": 129.8840959072113,
+   "fits": 4,
+   "sec_per_fit": 32.471023976802826
+  }
+ }
+}

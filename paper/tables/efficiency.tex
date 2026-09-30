@@ -1,0 +1,24 @@
+\begin{table}[H]
+\tablesize{\footnotesize}
+\caption{Computational cost: number of parameters, training time and the time to score all test learners at every decision point, measured with one CPU thread on an otherwise idle machine (seed 0). For SASRec and GRU4Rec, the training time covers all fits on the test cohorts (one per test presentation and decision point); the tree ensembles, fitted once per decision point, are timed in the main runs.}
+\label{tab:efficiency}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}llCCCCC@{}}
+\toprule
+ & & & \multicolumn{2}{c}{\textbf{OULAD}} & \multicolumn{2}{c}{\textbf{act-mooc}}\\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+\textbf{Model} & \textbf{Service} & \textbf{Parameters}$^{a}$ & Train (min) & Score (s) & Train (min) & Score (s)\\
+\midrule
+OPAL (ours) & Risk + rec. & 102,181 & 16.2 & 6.9 & 16.9 & 0.8\\
+GRU & Risk & 49,793 & 3.0 & 1.3 & 3.1 & 0.4\\
+Transformer & Risk & 95,873 & 8.6 & 3.8 & 23.5 & 1.1\\
+R-GCN & Risk & 111,041 & 0.9 & 1.0 & 0.1 & 0.1\\
+HGT & Risk & 99,661 & 4.5 & 3.9 & 0.8 & 0.7\\
+LightGBM & Risk & -- & 0.1 & 0.3 & $<$0.1 & $<$0.1\\
+XGBoost & Risk & -- & 0.2 & 0.1 & $<$0.1 & $<$0.1\\
+SASRec & Rec. & -- & 4.9 & -- & 9.5 & --\\
+GRU4Rec & Rec. & -- & 1.5 & -- & 2.2 & --\\
+\bottomrule
+\end{tabularx}
+\footnotesize{$^{a}$Trainable parameters of the OULAD model.}
+\end{table}

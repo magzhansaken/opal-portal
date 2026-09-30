@@ -1,0 +1,30 @@
+\begin{table}[H]
+\tablesize{\footnotesize}
+\caption{Test AUC of at-risk prediction on the 2014J presentations of OULAD at each decision point (mean $\pm$ standard deviation over seeds); the best mean in each column is in bold.}
+\label{tab:auc-oulad}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}lCCCCCC@{}}
+\toprule
+\textbf{Model} & \textbf{Week 2} & \textbf{Week 4} & \textbf{Week 6} & \textbf{Week 8} & \textbf{Week 12} & \textbf{Mean}\\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Tabular models}}\\
+LR & \textbf{0.715}$^{*}$ & 0.704$^{*}$ & 0.763$^{*}$ & 0.787$^{*}$ & 0.793$^{*}$ & 0.752\\
+RF & 0.705$\pm$0.001 & \textbf{0.760}$\pm$0.001$^{*}$ & 0.769$\pm$0.000 & 0.798$\pm$0.001 & 0.811$\pm$0.001 & 0.769$\pm$0.001\\
+XGBoost & 0.710$\pm$0.001$^{*}$ & 0.758$\pm$0.002$^{*}$ & 0.769$\pm$0.001 & 0.801$\pm$0.001 & 0.808$\pm$0.001$^{*}$ & 0.769$\pm$0.000\\
+LightGBM & 0.710$\pm$0.001$^{*}$ & 0.758$\pm$0.002$^{*}$ & \textbf{0.772}$\pm$0.001 & 0.803$\pm$0.001 & 0.807$\pm$0.001$^{*}$ & \textbf{0.770}$\pm$0.001\\
+HGB + Platt & 0.704$\pm$0.000 & 0.755$\pm$0.001$^{*}$ & 0.767$\pm$0.001 & \textbf{0.805}$\pm$0.000 & 0.804$\pm$0.001$^{*}$ & 0.767$\pm$0.000\\
+MLP & 0.703$\pm$0.004$^{*}$ & 0.731$\pm$0.010$^{*}$ & 0.750$\pm$0.003$^{*}$ & 0.794$\pm$0.002 & 0.793$\pm$0.003$^{*}$ & 0.754$\pm$0.002\\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Sequence models}}\\
+GRU & 0.693$\pm$0.005 & 0.741$\pm$0.004$^{*}$ & 0.766$\pm$0.004 & 0.796$\pm$0.003 & \textbf{0.816}$\pm$0.003$^{*}$ & 0.762$\pm$0.003\\
+Transformer & 0.690$\pm$0.008 & 0.742$\pm$0.005 & 0.763$\pm$0.002$^{*}$ & 0.794$\pm$0.001 & 0.811$\pm$0.001 & 0.760$\pm$0.003\\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Static graph models}}\\
+R-GCN & 0.693$\pm$0.005 & 0.744$\pm$0.005 & 0.766$\pm$0.005 & 0.795$\pm$0.005 & 0.812$\pm$0.003 & 0.762$\pm$0.004\\
+HGT & 0.699$\pm$0.004 & 0.746$\pm$0.005 & 0.767$\pm$0.003 & 0.795$\pm$0.003 & 0.810$\pm$0.003 & 0.763$\pm$0.003\\
+\midrule
+OPAL (ours) & 0.687$\pm$0.007 & 0.742$\pm$0.008 & 0.766$\pm$0.006 & 0.795$\pm$0.006 & 0.812$\pm$0.004 & 0.760$\pm$0.005\\
+\bottomrule
+\end{tabularx}
+\footnotesize{$^{*}$Seed-ensemble AUC differs from that of OPAL (DeLong test, Holm-adjusted $p<0.05$); LR is deterministic and was trained once.}
+\end{table}

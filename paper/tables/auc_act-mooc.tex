@@ -1,0 +1,30 @@
+\begin{table}[H]
+\tablesize{\footnotesize}
+\caption{Test AUC of at-risk prediction on act-mooc (last 15\% of learners) at each decision point (mean $\pm$ standard deviation over seeds); the best mean in each column is in bold.}
+\label{tab:auc-act-mooc}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}lCCCCC@{}}
+\toprule
+\textbf{Model} & \textbf{Day 1} & \textbf{Day 3} & \textbf{Day 5} & \textbf{Day 7} & \textbf{Mean}\\
+\midrule
+\multicolumn{6}{@{}l}{\textit{Tabular models}}\\
+LR & 0.529$^{*}$ & 0.689 & 0.741 & 0.793 & 0.688\\
+RF & 0.633$\pm$0.002 & \textbf{0.729}$\pm$0.002 & \textbf{0.759}$\pm$0.001 & \textbf{0.803}$\pm$0.001 & \textbf{0.731}$\pm$0.001\\
+XGBoost & 0.631$\pm$0.006$^{*}$ & 0.719$\pm$0.004 & 0.751$\pm$0.005 & \textbf{0.804}$\pm$0.002 & 0.726$\pm$0.004\\
+LightGBM & \textbf{0.642}$\pm$0.003$^{*}$ & 0.724$\pm$0.002 & 0.757$\pm$0.003 & 0.800$\pm$0.002 & \textbf{0.731}$\pm$0.001\\
+HGB + Platt & 0.577$\pm$0.005 & 0.704$\pm$0.002 & 0.742$\pm$0.003 & 0.795$\pm$0.002 & 0.704$\pm$0.002\\
+MLP & 0.570$\pm$0.019 & 0.700$\pm$0.004 & 0.740$\pm$0.004 & 0.798$\pm$0.002 & 0.702$\pm$0.006\\
+\midrule
+\multicolumn{6}{@{}l}{\textit{Sequence models}}\\
+GRU & 0.596$\pm$0.005 & 0.711$\pm$0.002 & 0.748$\pm$0.001 & 0.788$\pm$0.001 & 0.711$\pm$0.002\\
+Transformer & 0.577$\pm$0.008 & 0.704$\pm$0.002 & 0.744$\pm$0.005 & 0.786$\pm$0.005 & 0.703$\pm$0.002\\
+\midrule
+\multicolumn{6}{@{}l}{\textit{Static graph models}}\\
+R-GCN & 0.578$\pm$0.002 & 0.703$\pm$0.002 & 0.743$\pm$0.001 & 0.787$\pm$0.001 & 0.703$\pm$0.001\\
+HGT & 0.578$\pm$0.002 & 0.700$\pm$0.002 & 0.739$\pm$0.002 & 0.788$\pm$0.003 & 0.701$\pm$0.002\\
+\midrule
+OPAL (ours) & 0.587$\pm$0.009 & 0.705$\pm$0.005 & 0.739$\pm$0.008 & 0.782$\pm$0.007 & 0.703$\pm$0.005\\
+\bottomrule
+\end{tabularx}
+\footnotesize{$^{*}$Seed-ensemble AUC differs from that of OPAL (DeLong test, Holm-adjusted $p<0.05$); LR is deterministic and was trained once.}
+\end{table}
